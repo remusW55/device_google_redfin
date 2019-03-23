@@ -16,6 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_redfin.mk \
+    $(LOCAL_DIR)/calyx_redfin.mk \
 
 COMMON_LUNCH_CHOICES := \
     aosp_redfin-userdebug \
+    calyx_redfin-userdebug \
