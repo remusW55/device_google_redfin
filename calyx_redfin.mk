@@ -21,3 +21,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/redfin/redfin:13/TP1A.220624.014/8819323:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+$(call inherit-product, vendor/google/redfin/redfin-vendor.mk)
