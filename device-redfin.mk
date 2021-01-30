@@ -16,17 +16,10 @@
 
 PRODUCT_HARDWARE := redfin
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
-        LOCAL_KERNEL := device/google/redbull-kernel/Image.lz4
-    else
-        LOCAL_KERNEL := device/google/redbull-kernel/vintf/Image.lz4
-    endif
-else
-    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
+ifneq ($(INLINE_KERNEL_BUILDING),true)
+TARGET_PREBUILT_KERNEL := device/google/redbull-kernel/Image.lz4
 PRODUCT_VENDOR_KERNEL_HEADERS := device/google/redbull-kernel/sm7250/kernel-headers
+endif
 
 include build/make/target/product/iorap_large_memory_config.mk
 include device/google/redbull/device-common.mk
