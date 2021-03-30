@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021 The Calyx Institute
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,3 +18,6 @@
 # For Google Camera
 PRODUCT_COPY_FILES += \
     device/google/redfin/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
+
+# PowerShare
+include hardware/google/pixel/powershare/device.mk
