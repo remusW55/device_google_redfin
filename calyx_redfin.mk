@@ -12,3 +12,5 @@ $(call inherit-product, device/google/redfin/aosp_redfin.mk)
 PRODUCT_NAME := calyx_redfin
 PRODUCT_MODEL := Pixel 5
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+PRODUCT_SOONG_NAMESPACES += vendor/google_devices/redfin
