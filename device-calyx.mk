@@ -19,5 +19,9 @@
 PRODUCT_COPY_FILES += \
     device/google/redfin/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
+# HBM
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlay
+
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
