@@ -18,5 +18,9 @@
 PRODUCT_COPY_FILES += \
     device/google/redfin/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
+# HBM
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlay
+
 # wireless_charger HAL service
 include device/google/redfin/wireless_charger/wireless_charger.mk
