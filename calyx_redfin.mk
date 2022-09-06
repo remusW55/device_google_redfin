@@ -16,9 +16,9 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=redfin \
-    PRIVATE_BUILD_DESC="redfin-user 13 TP1A.220624.014 8819323 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 13 TP1A.220905.004 8927612 release-keys"
 
-BUILD_FINGERPRINT := google/redfin/redfin:13/TP1A.220624.014/8819323:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:13/TP1A.220905.004/8927612:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
