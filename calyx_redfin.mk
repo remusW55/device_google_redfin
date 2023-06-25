@@ -1,5 +1,5 @@
 # Inherit some common stuff.
-$(call inherit-product, vendor/calyx/config/common.mk)
+$(call inherit-product, vendor/calyx/config/common_phone.mk)
 
 # Device specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/google/redfin/overlay-calyx
